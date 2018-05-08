@@ -3,16 +3,16 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: vcarbone <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: dwald <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2016/12/19 14:52:49 by vcarbone          #+#    #+#              #
-#    Updated: 2017/03/08 14:35:36 by vcarbone         ###   ########.fr        #
+#    Created: 2016/12/19 14:52:49 by dwald	       #+#    #+#              #
+#    Updated: 2017/03/08 14:35:36 by dwald            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = fillit
 
-SRC =	main.c \
+SRC_FILES =	main.c \
 		check_errors.c \
 		ft_check_contact.c \
 		parser.c \
@@ -21,9 +21,13 @@ SRC =	main.c \
 		display.c \
 		ft_memdel_single_pointer.c
 
+SRC_PATH = 	srcs
+
+OBJ_PATH =	objs
+
 LIB =	libft/libft.a
 
-OBJ =	$(SRC:.c=.o)
+OBJ =	$(SRC_FILES:.c=.o)
 
 CC =	gcc
 
@@ -35,8 +39,8 @@ $(NAME):	$(OBJ) $(LIB)
 			@$(CC) $(FLAG) -o $(NAME) $(OBJ) ./$(LIB)
 			@echo "\033[1m\033[32mSuccess : \033[0m compilation fillit"
 
-%.o:		%.c
-			@$(CC) $(FLAG) -o $@ -c $< -I./libft/includes/ -I./ 
+%.o:		$(SRC_PATH)/%.c
+			@$(CC) $(FLAG) -o $@ -c $< -I./libft/includes/ -I./incl/ 
 	
 $(LIB):
 			make -C ./libft/
