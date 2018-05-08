@@ -31,7 +31,7 @@ OBJ =	$(SRC_FILES:.c=.o)
 
 CC =	gcc
 
-FLAG = #-Wextra -Wall -Werror	
+FLAG = -Wextra -Wall -Werror	
 
 all: $(NAME)
 

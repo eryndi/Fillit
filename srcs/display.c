@@ -35,10 +35,12 @@ static	char	*ft_char(int b)
 {
 	char	*str;
 
-	if ((str = ft_strnew(2)) == NULL)
+	if ((str = ft_strnew(7)) == NULL)
 		ft_put_error();
-	str[0] = b + 'A';
-	str[1] = '\0';
+	str = color_me(b, str);
+	str[5] = b + 'A';
+	str[6] = '\0';
+	str = ft_strcat(str, EOC); 
 	return (str);
 }
 

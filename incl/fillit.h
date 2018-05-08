@@ -16,6 +16,14 @@
 # include "libft.h"
 # include <fcntl.h>
 
+# define RED			"\033[31m"
+# define GREEN		"\033[32m"
+# define YELLOW		"\033[33m"
+# define BLUE		"\033[34m"
+# define MAGENTA		"\033[35m"
+# define CYAN		"\033[36m"
+# define EOC			"\033[0m"
+
 typedef struct	s_tetris
 {
 	int			*x;
@@ -41,6 +49,6 @@ void			ft_move_by_one_x(t_tetris *shape, int block);
 void			ft_move_by_one_y(t_tetris *shape, int block);
 void			ft_normalize(t_tetris *shape, int block);
 void			ft_put_error();
-void			ft_memdel_single_pointer(void *ap);
+char			*color_me(int id, char *s);
 
 #endif
