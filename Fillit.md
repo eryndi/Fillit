@@ -4,7 +4,7 @@ Fillit is a project objective is the search for an optimal solution among a very
 
 The goal of this project is to introduce you to basic algorithm and to have you manipulate inputs.
 
-- Analyse the map
+- Analyse the Tetromino pieces
 - Identify the best arrangement for Tetrominos
 - Write the solution on the standard output
 
