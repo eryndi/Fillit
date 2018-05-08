@@ -30,7 +30,7 @@ void			ft_read(char *tetriminos, char *file)
 	if (read(fd, buf, 520) == -1)
 		ft_put_error();
 	ft_strcpy(tetriminos, buf);
-	ft_memdel_single_pointer(buf);
+	ft_memdel((void*)&buf);
 	if (close(fd) == -1)
 		ft_put_error();
 }
