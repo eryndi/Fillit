@@ -19,6 +19,7 @@ SRC_FILES =	main.c \
 		backtrack_algorithm.c\
 		auxiliary_functions.c \
 		display.c \
+		colors.c
 
 SRC_PATH = 	srcs
 
@@ -30,7 +31,7 @@ OBJ =	$(SRC_FILES:.c=.o)
 
 CC =	gcc
 
-FLAG = -Wextra -Wall -Werror	
+FLAG = #-Wextra -Wall -Werror	
 
 all: $(NAME)
 
