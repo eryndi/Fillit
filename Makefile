@@ -19,7 +19,6 @@ SRC_FILES =	main.c \
 		backtrack_algorithm.c\
 		auxiliary_functions.c \
 		display.c \
-		ft_memdel_single_pointer.c
 
 SRC_PATH = 	srcs
 

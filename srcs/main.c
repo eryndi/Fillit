@@ -80,7 +80,7 @@ int				main(int argc, char **argv)
 		ft_putendl_fd("usage: fillit input_file", 2);
 	if (tetriminos[0] != '\0')
 		ft_launcher(tetriminos, shape, block, square);
-	ft_memdel_single_pointer(tetriminos);
-	ft_memdel_single_pointer(shape);
+	ft_memdel((void*)&tetriminos);
+	ft_memdel((void*)&shape);
 	return (0);
 }
