@@ -6,7 +6,7 @@
 /*   By: dwald <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/25 16:37:58 by dwald             #+#    #+#             */
-/*   Updated: 2017/02/27 14:49:34 by vcarbone         ###   ########.fr       */
+/*   Updated: 2018/05/10 14:39:26 by dwald            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ static	char	*ft_char(int b)
 	str = color_me(b, str);
 	str[5] = b + 'A';
 	str[6] = '\0';
-	str = ft_strcat(str, EOC); 
+	str = ft_strcat(str, EOC);
 	return (str);
 }
 

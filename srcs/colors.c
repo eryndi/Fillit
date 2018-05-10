@@ -6,19 +6,11 @@
 /*   By: dwald <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/15 11:21:17 by dwald             #+#    #+#             */
-/*   Updated: 2017/12/15 12:23:28 by dwald            ###   ########.fr       */
+/*   Updated: 2018/05/10 14:38:40 by dwald            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fillit.h"
-
-# define RED			"\033[31m"
-# define GREEN		"\033[32m"
-# define YELLOW		"\033[33m"
-# define BLUE		"\033[34m"
-# define MAGENTA		"\033[35m"
-# define CYAN		"\033[36m"
-# define EOC			"\033[0m"
 
 char	*color_me(int id, char *s)
 {
